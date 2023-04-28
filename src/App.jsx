@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import VendingMachine from './VendingMachine'
 import Slurm from './Slurm'
 import BachelorChow from './BachelorChow'
@@ -11,10 +11,10 @@ function App() {
     <>
       <BrowserRouter>
         <div className='d-flex justify-content-around'>
-          <Link to="/">Home</Link>
-          <Link to="/slurm">Slurm</Link>
-          <Link to="/bachelor-chow">Bachelor Chow</Link>
-          <Link to="/popplers">Popplers</Link>
+          <NavLink className='link' to="/">Home</NavLink>
+          <NavLink className='link' to="/slurm">Slurm</NavLink>
+          <NavLink className='link' to="/bachelor-chow">Bachelor Chow</NavLink>
+          <NavLink className='link' to="/popplers">Popplers</NavLink>
         </div>
         <Routes>
           <Route exact path='/' element={<VendingMachine/>}/>

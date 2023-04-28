@@ -8,3 +8,13 @@
 img {
   width: 90%;
 }
+
+a.active, a.active:hover {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: purple;
+}
+
+a:hover {
+  font-size: 1.1em;
+}
