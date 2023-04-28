@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+a.active, a.active:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: purple;
+  }
+  
+a:hover {
+    font-size: 1.1em;
+}
